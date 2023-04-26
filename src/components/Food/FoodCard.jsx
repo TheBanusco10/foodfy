@@ -22,7 +22,7 @@ const FoodCard = ({ id, name, image, ingredients, price }) => {
           <p className="font-thin text-lg">{price}$</p>
         </div>
         <button
-          className="w-2/12 lg:w-1/12 h-full flex justify-center items-center bg-emerald-400 disabled:bg-emerald-300"
+          className="w-2/12 lg:w-1/12 h-full flex justify-center items-center bg-emerald-400 disabled:bg-emerald-300 hover:bg-emerald-500 transition duration-300"
           onClick={() => addToCart(id, category)}
           disabled={isLoadingCart}
         >
